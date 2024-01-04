@@ -9,6 +9,7 @@
 <!-- Option 1: Include in HTML -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 <link rel="stylesheet" href="style.css">
+<script defer src="./custom.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -22,9 +23,9 @@
               </svg>
         </div>
  </div>
-
-    <input id="range" type="range" min="4" max="20" step="1">
-    <p class="display-pw-size">Password size: <span>12</span></p>
+<!-- CADA QUE CAMBIE EL VALOR, CHANGE ACTUALIZARA MOSTRANDO EL VALOR -->
+    <input id="range" type="range" min="4" max="20" step="1" onchange="showVal(this.value)">
+    <p class="display-pw-size">Password size: <span class="numeroCaracteres">12</span></p>
 
     <div class="select-option">
         <input id="upper" type="checkbox" checked>
