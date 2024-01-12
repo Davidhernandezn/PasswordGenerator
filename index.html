@@ -14,41 +14,43 @@
 </head>
 <body>
 
-    <div class="main-card">
-        <h1>Validación de Contraseñas</h1>
-        <div class="password">
-            <span id="pw-text">CFVWRFSRG</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-              </svg>
+    <div class="login-container">
+        <div class="main-card">
+            <h1>Generador de Contraseñas</h1>
+            <div class="password">
+                <span id="pw-text">CFVWRFSRG</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
+                </svg>
+            </div>
         </div>
- </div>
-<!-- CADA QUE CAMBIE EL VALOR, CHANGE ACTUALIZARA MOSTRANDO EL VALOR -->
-    <input id="range" type="range" min="4" max="20" step="1" onchange="showVal(this.value)">
-    <p class="display-pw-size">Password size: <span class="numeroCaracteres">12</span></p>
+        <!-- CADA QUE CAMBIO EL VALOR, CHANGE ACTUALIZARA MOSTRANDO EL VALOR -->
+        <input id="range" type="range" min="4" max="20" step="1" onchange="showVal(this.value)">
+        <p class="display-pw-size">Password size: <span class="numeroCaracteres">12</span></p>
 
-    <div class="select-option">
-        <input id="upper" type="checkbox" checked>
-        <label>Contiene Mayusculas</label>
-    </div>
-   
-    <div class="select-option">
-        <input id="lower" type="checkbox" checked>
-        <label>Contiene Minusculas</label>
-    </div>
+        <div class="select-option">
+            <input id="upper" type="checkbox" checked>
+            <label>Contiene Mayusculas</label>
+        </div>
+       
+        <div class="select-option">
+            <input id="lower" type="checkbox" checked>
+            <label>Contiene Minusculas</label>
+        </div>
 
-    <div class="select-option">
-        <input id="number" type="checkbox" checked>
-        <label for="number">Contiene Numeros</label>
-    </div>
+        <div class="select-option">
+            <input id="number" type="checkbox" checked>
+            <label for="number">Contiene Numeros</label>
+        </div>
 
-    <div class="select-option">
-        <input id="symbol" type="checkbox" checked>
-        <label for="symbol">Contiene Symbolos</label>
-    </div>
+        <div class="select-option">
+            <input id="symbol" type="checkbox" checked>
+            <label for="symbol">Contiene Symbolos</label>
+        </div>
 
-    <button class="generate">
-        Generate
-    </button>
+        <button class="generate">
+            Generate
+        </button>
+    </div>
 </body>
 </html>

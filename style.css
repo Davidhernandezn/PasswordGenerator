@@ -1,15 +1,80 @@
 /* Option 2: Import via CSS */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
-*{
-    margin: 0px;
-    padding: 0px;
-}
-.main-card{
-    background: rgb(97, 97, 255);
-    color: white;
-    padding: 10px;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-h1{
+.login-container {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.password {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pw-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.password svg {
+    cursor: pointer;
+    color: #007bff;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.display-pw-size {
+    margin-top: 10px;
+}
+
+.select-option {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+label {
+    margin-left: 10px;
+}
+
+.generate {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.generate:hover {
+    background-color: #0056b3;
 }
